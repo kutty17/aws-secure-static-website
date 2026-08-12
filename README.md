@@ -243,7 +243,7 @@ The distribution successfully serves content from the private S3 origin.
 
 Amazon CloudFront Origin Access Control (OAC) was configured to securely access the private Amazon S3 bucket.
 
-![CloudFront OAC](screenshots/cloudfront/cloudfront-oac.png)
+![CloudFront OAC](screenshots/cloudfront-oac.png)
 
 The S3 bucket does not allow public object access. CloudFront uses OAC to authenticate requests to the S3 origin.
 
@@ -319,7 +319,7 @@ Google PageSpeed Insights was used to test the deployed website.
 
 ## Mobile
 
-![Mobile PageSpeed Results](screenshots/performance/pagespeed-mobile.png)
+![Mobile PageSpeed Results](screenshots/pagespeed-mobile.png)
 
   Metric                           Result
   -------------------------- ------------
@@ -332,7 +332,7 @@ Google PageSpeed Insights was used to test the deployed website.
 
 ## Desktop
 
-![Desktop PageSpeed Results](screenshots/performance/pagespeed-desktop.png)
+![Desktop PageSpeed Results](screenshots/pagespeed-desktop.png)
 
   Metric                            Result
   -------------------------- -------------
@@ -411,7 +411,7 @@ Private S3
 
 The website was successfully deployed and is accessible through the custom HTTPS domain.
 
-![Final Website](screenshots/final/final-website-https.png)
+![Final Website](screenshots/final-website-https.png)
 
 ### Live Website
 
