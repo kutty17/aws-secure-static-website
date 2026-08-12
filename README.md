@@ -19,7 +19,7 @@ DNS**.
 
 ## Architecture
 
-![AWS Architecture](architecture/project-overview.png)
+![AWS Architecture](architecture/final-architecture.png)
 
 ``` text
 Internet
