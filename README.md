@@ -19,6 +19,8 @@ DNS**.
 
 ## Architecture
 
+![AWS Architecture](architecture/project-overview.png)
+
 ``` text
 Internet
    |
