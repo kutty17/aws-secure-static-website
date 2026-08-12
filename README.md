@@ -239,6 +239,28 @@ The distribution successfully serves content from the private S3 origin.
 
 ------------------------------------------------------------------------
 
+# 🔐 Origin Access Control (OAC)
+
+Amazon CloudFront Origin Access Control (OAC) was configured to securely access the private Amazon S3 bucket.
+
+![CloudFront OAC](screenshots/cloudfront/cloudfront-oac.png)
+
+The S3 bucket does not allow public object access. CloudFront uses OAC to authenticate requests to the S3 origin.
+
+### Access Flow
+
+```text
+User
+  |
+  v
+CloudFront
+  |
+  | Origin Access Control
+  v
+Private S3 Bucket
+
+------------------------------------------------------------------------
+
 ## 8. GoDaddy DNS
 
 The domain was purchased and managed through GoDaddy.
@@ -275,6 +297,8 @@ dineshkumaras.online
 
 Amazon CloudWatch was used to monitor CloudFront metrics.
 
+![CloudWatch Dashboard](screenshots/cloudwatch/cloudwatch-dashboard.png)
+
 The dashboard includes:
 
 -   Requests
@@ -295,6 +319,8 @@ Google PageSpeed Insights was used to test the deployed website.
 
 ## Mobile
 
+![Mobile PageSpeed Results](screenshots/performance/pagespeed-mobile.png)
+
   Metric                           Result
   -------------------------- ------------
   Performance                  **95/100**
@@ -305,6 +331,8 @@ Google PageSpeed Insights was used to test the deployed website.
   Speed Index                   **2.9 s**
 
 ## Desktop
+
+![Desktop PageSpeed Results](screenshots/performance/pagespeed-desktop.png)
 
   Metric                            Result
   -------------------------- -------------
@@ -376,6 +404,38 @@ OAC
    v
 Private S3
 ```
+
+------------------------------------------------------------------------
+
+# 🌐 Final Website
+
+The website was successfully deployed and is accessible through the custom HTTPS domain.
+
+![Final Website](screenshots/final/final-website-https.png)
+
+### Live Website
+
+**https://dineshkumaras.online**
+
+**https://www.dineshkumaras.online**
+
+### Final Deployment Flow
+
+```text
+User
+  |
+  v
+GoDaddy DNS
+  |
+  v
+Amazon CloudFront
+  |
+  | Origin Access Control
+  v
+Private Amazon S3
+  |
+  v
+Portfolio Website
 
 ------------------------------------------------------------------------
 
