@@ -425,10 +425,6 @@ Recommended evidence:
 12. PageSpeed mobile
 13. PageSpeed desktop
 
-Before publishing screenshots, redact unnecessary sensitive information
-such as AWS account IDs, certificate IDs, personal email addresses,
-phone numbers, and internal identifiers.
-
 ------------------------------------------------------------------------
 
 # Lessons Learned
